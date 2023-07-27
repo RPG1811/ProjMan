@@ -4,7 +4,7 @@ import { Router } from 'express';
 import {
   createTask,
   getTaskById,
-  updateTask,
+  
   markTaskComplete,
   checkPrerequisiteTasks,
 } from '../controllers/taskController.js';
@@ -17,8 +17,7 @@ router.post('/', createTask);
 // Route for fetching a task by its ID
 router.get('/:taskId', getTaskById);
 
-// Route for updating a task
-router.put('/:taskId', updateTask);
+
 
 // Route for marking a task as complete
 router.post('/:taskId/complete', markTaskComplete);

@@ -1,6 +1,6 @@
 
 import express from 'express';
-import { json } from 'body-parser';
+import bodyParser from 'body-parser';
 import { connect } from 'mongoose';
 import cors from 'cors';
 const app = express();
@@ -13,7 +13,7 @@ import memberRoutes from './routes/memberRoutes.js';
 
 // Middleware
 app.use(cors());
-app.use(json());
+app.use(bodyParser.json());
 
 // Connect to MongoDB
 const dbURI = 'mongodb+srv://rajgohel0003:tzS0rkZM5khASD69@cluster0.ohmcsj1.mongodb.net/?retryWrites=true&w=majority'; // Replace with your MongoDB connection URI

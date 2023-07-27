@@ -1,8 +1,8 @@
 // Dashboard.js
 
 import React from 'react';
-import ProjectCard from './ProjectCard';
-import TaskCard from './TaskCard';
+import ProjectCard from '../components/ProjectCard';
+import TaskCard from '../components/TaskCard';
 
 const Dashboard = () => {
   // Sample project data (replace this with your actual data)

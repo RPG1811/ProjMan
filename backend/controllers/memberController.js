@@ -1,6 +1,6 @@
 // memberController.js
 
-import Member, { findOne } from '../models/Member.js';
+import Member from '../models/Member.js';
 
 // Create a new member
 export async function createMember(req, res) {

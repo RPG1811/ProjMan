@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = (isAdmin,isLoggedIn) => {
   return (
     <header style={styles.header}>
       <nav style={styles.nav}>
@@ -12,7 +12,7 @@ const Header = () => {
             <Link to="/" style={styles.navLink}>Home</Link>
           </li>
           <li style={styles.navItem}>
-            <Link to="/projects" style={styles.navLink}>Projects</Link>
+            <Link to="../pages/ProjectList" style={styles.navLink}>Projects</Link>
           </li>
           <li style={styles.navItem}>
             <Link to="/tasks" style={styles.navLink}>Tasks</Link>
